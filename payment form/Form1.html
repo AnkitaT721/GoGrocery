@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceed to order</title>
+    <link rel="stylesheet" href="style 1.css">
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <h1 class="heading">Payment Form</h1>
+        <p>Required fileds are followed by *</p>
+        <h2>Contact Information</h2>
+        <p>Name: * <input type="text" name="name" placeholder="Rakesh Roy, Swyeta Sharma" required></p>
+       <fieldset>
+           <legend>Gender *</legend>
+            <p>
+            Male <input type="radio" name="gender" id="male" required>
+            Female <input type="radio" name="gender" id="female" required>
+            Others <input type="radio" name="gender" id="others" required>
+            </p>
+        </fieldset> 
+            <p>Adress:<textarea name="address" id="address" cols="100" rows="8" required></textarea></p>      
+            <p>Email: <input type="email" name="email" id="email" placeholder="royrakesh@gmail.com" style="width: 30%;"></p> 
+            <p>Pincode: * <input type="number" name="pincode" id="pincode" required style="width: 20%;"></p> 
+       
+        <hr>
+        <h2>Payment Information</h2>
+        <p>Card Type:
+            <select name="card_type" id="card_type" style="width: 30%;">
+             <option value="selectacard">--Select A Card Type--</option>
+             <option value="visa">VISA</option>
+             <option value="master">Master Card</option>
+             <option value="rupay">RuPay</option>
+            </select>
+        </p>
+        <p>Card Number:
+            <input type="password" name="card_number" id="card_number" maxlength="16" minlength="16" style="width: 30%;">
+        </p>
+        <p>
+            Expiration Date: <input type="date" name="exp_date" id="exp_date" style="width: 30%;">
+        </p>
+        <p>
+            CVV: <input type="password" name="cvv" id="cvv" maxlength="3" minlength="3" style="width: 20%;">
+        </p>
+        <br> <br> <br>
+        <button type="submit" class="block x">Pay Now!</button>
+    </form>
+</div>
+</body>
+</html>
